@@ -1,7 +1,24 @@
 aid: dogvacay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dogvacay.png
 name: DogVacay
-description: DogVacay is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'DogVacay was a consumer marketplace for dog boarding, pet sitting, dog
+  walking, and doggy daycare that connected pet owners with a network of vetted, background-checked
+  pet sitters and hosts across the United States and Canada. Founded in 2012 and backed
+  by Andreessen Horowitz (a16z), the company was acquired by and merged into Rover
+  in 2017; the DogVacay brand has since been retired and dogvacay.com now redirects
+  to Rover. No public developer API, developer portal, or API documentation was ever
+  published, so this profile carries company identity only and no API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/dogvacay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,32 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: rover
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pet Care
+- Marketplace
+- Dog Boarding
+- Pet Sitting
+- Consumer
+- Acquired
 apis: []
+common:
+- type: DomainSecurity
+  url: security/dogvacay-domain-security.yml
+- type: Website
+  url: https://dogvacay.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
